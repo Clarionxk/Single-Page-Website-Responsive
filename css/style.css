@@ -1,0 +1,107 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    overflow: hidden;
+    scroll-behavior: smooth;
+
+}
+/* style the menu section */
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgb(151, 221, 151);
+    height: 65px;
+    z-index: 100; 
+}
+.header .nav-bar{
+    display: flex;
+}
+.header .nav-bar a{
+    flex: 1;
+    text-align: center;
+    font-size: 22px;
+    line-height: 65px;
+    color: white;
+}
+/* apply pseudo selector hover */
+.header .nav-bar a:hover{
+    filter: brightness(0.8);
+}
+/* apply different background color on each anchor menu item */
+.header .nav-bar a:nth-child(1){
+    background-color: rgb(155, 13, 13);
+}
+.header .nav-bar a:nth-child(2){
+    background-color: rgb(13, 155, 25);
+}
+.header .nav-bar a:nth-child(3){
+    background-color: rgb(14, 183, 212);
+}
+.header .nav-bar a:nth-child(4){
+    background-color: rgb(214, 228, 19);
+}
+.header .nav-bar a:nth-child(5){
+    background-color: rgb(206, 20, 128);
+}
+
+/* style the main body section */
+.container{
+    display: flex;
+    width: 500%;
+    height: 110vh; 
+}
+
+.container .main-section{
+    display: flex;
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    letter-spacing: 0.5rem;
+    text-transform: none;
+    color: azure;
+}
+
+.container .main-section:nth-child(1){
+    background-color: rgb(160, 13, 13);
+}
+.container .main-section:nth-child(2){
+    background-color: rgb(13, 155, 25);
+}
+.container .main-section:nth-child(3){
+    background-color: rgb(14, 183, 212);
+}
+.container .main-section:nth-child(4){
+    background-color: rgb(214, 228, 19);
+}
+.container .main-section:nth-child(5){
+    background-color: rgb(206, 20, 128);
+}
+/* apply media queries to adjust for different devices to make it responsive*/
+@media (max-width: 750px){
+    .header .nav-bar a span{
+        display: none;
+    }
+}
+
+.column{
+
+    /* position: relative;
+    width: 100%;
+    right:20%;
+    height:20%;
+    top:20%; */
+      
+       
+
+}
+
